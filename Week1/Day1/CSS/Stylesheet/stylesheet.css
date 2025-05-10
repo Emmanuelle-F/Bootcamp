@@ -1,0 +1,51 @@
+#blueColor{
+    color: blue;
+  }
+
+#firstDiv li{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#secondDiv p{
+    color:white;
+    background-color: pink;
+}
+
+#div1{
+    background-color: blue; 
+    margin-left: 20px;
+}
+
+#div3{
+    background-color: red;
+}
+
+.frenchFlag{
+    height: 60px;
+    width: 25px;
+    display: inline-block;
+}
+
+#greyBox{
+    background-color: lightgray;
+    height: 85px;
+    width: 275px;
+}
+
+#blueBox{
+    background-color: lightskyblue;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 403px;
+}
+
+#orangeBox{
+    background-color: orange;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 406px;
+    left: 12px;
+}

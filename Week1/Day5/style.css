@@ -1,0 +1,128 @@
+body{
+    font-family: monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    background-color: black;
+    padding: 10px;
+}
+
+#product{
+    display: inline;
+    color: white;
+    position: absolute;
+    right: 25px;
+    top: 13px;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#firstRow > div{
+    display: inline-block;
+    padding: 10px;
+}
+
+#secondRow > div{
+    display: inline-block;
+    padding: 10px;
+}
+
+#thirdRow > div{
+    display: inline-block;
+    padding: 10px;
+}
+
+.description {
+    text-align: center;
+}
+
+.price {
+    font-weight: bold;
+    color: #16a085;
+}
+
+.disocuntedPrice{
+    align-content: center;
+    text-decoration: line-through;
+    color: #a3aab2;
+    font-size: 10px;
+}
+
+.centeredText{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.addToCart{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: gray;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.products{
+    position: relative;
+
+}
+
+
+.New{
+    background-color: #16a085;
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 35px;
+    font-size: 8px;
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+
+.discount{
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 35px;
+    font-size: 8px;
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    left: 160px;
+}
+
+.icons {
+    display: none;
+    transition: 0.3s;
+}
+
+.products:hover .icons{
+    background-color: blue;
+    display:block;
+}
