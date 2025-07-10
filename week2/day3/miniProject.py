@@ -41,14 +41,17 @@ def playerInput(board, player):
         rowPosition = int(input (f"{playerName} please enter a valid row from 1 to 3: ")) - 1
         columnPosition = int(input (f"{playerName} please enter a valid column from 1 to 3: ")) - 1
 
-        if 0 <= rowPosition <= 2 and 0 <= columnPosition <= 2:
-            if board[rowPosition][columnPosition] == ' ':
-                validPosition = True
-                return rowPosition, columnPosition
+        if 0 <= rowPosition <= 2:
+            if 0 <=columnPosition <= 2:
+                if board[rowPosition][columnPosition] == ' ':
+                    validPosition = True
+                    return rowPosition, columnPosition
+                else:
+                    print ("Cell is already taken")
             else:
-                print ("Cell is already taken")
+                print ("Enter a valid column position")
         else:
-            print ("Enter a valid row and column position")
+            print ("Enter a valid row position")
 
 
 # check for win
