@@ -2,6 +2,7 @@
 def initialiseBoard():
     return [[' ',' ',' '],[' ',' ',' '],[' ',' ',' ']]
 
+
 # Display the Game Board
 def displayBoard(board):
     for i, row in enumerate(board):
@@ -49,6 +50,7 @@ def playerInput(board, player):
         else:
             print ("Enter a valid row and column position")
 
+
 # check for win
 def checkWin(board, player):
 
@@ -68,7 +70,6 @@ def checkWin(board, player):
     elif board[2][0] == symbol and board[1][1] == symbol and board[0][2] == symbol:
         return "win"
        
-
     # # horizontally
     # if board[0][0] == symbol and board[0][1] == symbol and board[0][2] == symbol:
     #     return "win"
@@ -89,6 +90,7 @@ def checkWin(board, player):
     # elif board[2][0] == symbol and board[1][1] == symbol and board[0][2] == symbol:
     #     return "win"
 
+
 def checkDraw(board):
     emptyCell = " "
     for row in board:
@@ -96,11 +98,9 @@ def checkDraw(board):
             return ""
     
     return "Draw"
-            
 
 
 # play
-
 def play():
     board = initialiseBoard()
 
@@ -133,6 +133,7 @@ def play():
                     gameOver = True
                     print ("It is a draw!")
                     break
+  
             
 # Main program
 play()
