@@ -15,7 +15,7 @@ def displayBoard(board):
 def registerPlayer():
     print ("\n")
     player1Name = input ("Player 1, please enter your name: ")
-    player2Name= input ("Player 2, please enter your name: ")
+    player2Name = input ("Player 2, please enter your name: ")
 
     player1 = {"name" : player1Name, "symbol" : "O"}
     player2 = {"name" : player2Name, "symbol" : "X"}
@@ -31,7 +31,7 @@ def playerInput(board, player):
 
     validPosition = False
     rowPosition = 0
-    columnPosition =0
+    columnPosition = 0
 
     playerName = player["name"]
 
@@ -125,7 +125,6 @@ def play():
             resultWin = checkWin(board, player)
 
             if resultWin == "win":
-                gameOver = True
                 print (f"{player["name"]} is the winner!")
                 break
             else:
@@ -133,7 +132,6 @@ def play():
                 resultDraw = checkDraw(board)
 
                 if resultDraw == "Draw":
-                    gameOver = True
                     print ("It is a draw!")
                     break
   
