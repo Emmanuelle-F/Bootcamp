@@ -72,27 +72,6 @@ def checkWin(board, player):
         return "win"
     elif board[2][0] == symbol and board[1][1] == symbol and board[0][2] == symbol:
         return "win"
-       
-    # # horizontally
-    # if board[0][0] == symbol and board[0][1] == symbol and board[0][2] == symbol:
-    #     return "win"
-    # elif board[1][0] == symbol and board[1][1] == symbol and board[1][2] == symbol:
-    #     return "win"
-    # elif board[2][0] == symbol and board[2][1] == symbol and board[2][2] == symbol:
-    #     return "win"
-    # # vertically
-    # elif board[0][0] == symbol and board[1][0] == symbol and board[2][0] == symbol:
-    #     return "win"
-    # elif board[0][1] == symbol and board[1][1] == symbol and board[2][1] == symbol:
-    #     return "win"
-    # elif board[0][2] == symbol and board[1][2] == symbol and board[2][2] == symbol:
-    #     return "win"
-    # # diagonally
-    # elif board[0][0] == symbol and board[1][1] == symbol and board[2][2] == symbol:
-    #     return "win"
-    # elif board[2][0] == symbol and board[1][1] == symbol and board[0][2] == symbol:
-    #     return "win"
-
 
 def checkDraw(board):
     emptyCell = " "
