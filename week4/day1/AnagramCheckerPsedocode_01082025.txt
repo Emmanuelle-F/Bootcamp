@@ -1,0 +1,34 @@
+Anagram checker mini project
+
+
+
+
+Scopes to be covered in this:
+
+init Here we have to build a function that is able to open the file, read line by line and for each line, we store it in an array. we will use python I/O files
+
+is_valid_word(word) means (for loop) create a function called check valid word. this takes in the user word, and loops through the list of valid words and check is there is a match (==). remember to convert the words into lower case string before comparison
+
+get_anagram_words(word): hint: filter the list of all words based on those words that have equal length of word
+
+is_anagram(word1, word2) hint: check if word length equal first. for loop within for loop to check whether characters match
+
+to check if user has entered more than one word: we split the user input by the character " ". For instance: text=input('Please enter a word: ) number_of_words= text.split(" ") if len(number_of_words)>1 ==> more than 2 words have been entered
+
+to check for only alphabetic, we can use regex expression: import re pattern = r'^[A-Za-z]+$' return bool (re.match(pattern,word))
+
+
+
+Group work simulation exercise
+Create a list of word: meat, team, mate, tame, boy, girl, mug, gum, silent, listen
+Case 1: choose a word that is in the list
+Case 2: choose a word that is not in the list
+Do the anagram check for that word and see the results. WALTHROUGH EACH AND EVERY STEP,DO NOT UNDERESTIMATE OR SKIP ANY STEPS. For each step, record the input, the process and the output
+
+FInally, based on the above walthrough use case example, build the pseudocode to map the whole process
+
+**********************************************************************************************************************************************
+file: anagram_checker.py => class
+
+
+file: anagrams.py => main program

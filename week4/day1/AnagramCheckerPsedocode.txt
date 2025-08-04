@@ -1,0 +1,42 @@
+Anagram Checker
+
+Anagram => a word, phrase, or name formed by rearranging the letters of another
+		Ex: gum and mug
+
+******************************************************************************************
+anagram/checker.py
+class AnagramChecker:
+	def init => load a list of words
+
+	def is_valid_word(word) => check if given word is valid (if the word is in the word list)
+
+	get_anagram(word) => should find all anagrams for the given word
+
+******************************************************************************************
+
+anagram.py
+
+import anagramChecker
+
+create an object of anagramChecker
+
+While True
+	
+	Enter a word
+	
+	if word == quit:
+		break
+
+	validate the word
+		remove spaces
+		check if contain more than 1 word
+		check if word contains only letters
+
+	is_valid_word(word)
+
+	get_anagram(word)
+
+	print message
+
+
+	
